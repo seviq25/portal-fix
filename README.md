@@ -5,6 +5,7 @@ A Fabric mod for Minecraft 26.2+ for solving a common farming inconvenience - mo
 ## Installation
 
 This mod requires [Fabric API](https://modrinth.com/mod/fabric-api)!
+
 Drop the mod .jar into your mods folder, and start the server!
 
 ## Why is this needed?
