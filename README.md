@@ -2,11 +2,13 @@
 
 A Fabric mod for Minecraft 26.2+ for solving a common farming inconvenience - mobs despawning upon entering a nether portal, if no other players are nearby.
 
+
 ## Installation
 
 This mod requires [Fabric API](https://modrinth.com/mod/fabric-api)!
 
 Drop the mod .jar into your mods folder, and start the server!
+
 
 ## Why is this needed?
 
@@ -18,6 +20,7 @@ The mob immediately despawns.
 
 This is what breaks most portal-based farms on multiplayer servers, making others rely on having a player AFK at the portal on the other side.
 
+
 ## What does this mod do?
 
 LTBPF makes select mobs get a period of despawn immunity once they change dimensions.
@@ -26,6 +29,7 @@ If a whitelisted entity enters a portal, it gets a grace period in which they **
 And once the period passes, their default despawning logic takes over - making them despawnable again.
 It also does not touch entities or mobs which were already persistent by some means (*tamed, name tagged, etc.*), 
 and checks if they were name tagged while in the grace period, to avoid taking away their persistence.
+
 
 ## Configuration
 
@@ -46,13 +50,15 @@ I put in most farmable mobs I could think of, but if the default configuration d
 
 And an option called `persistenceDurationSeconds` for setting the length of the grace period in seconds. (default 60) 
 
-### Commands / Permissions
+
+## Commands / Permissions
 
 /portalfix reload - reloads the configuration file
 
 *requires the `portalfix.reload` permission or Operator privileges.*
 
-### Extra
+
+## Extra
 
 I am no programming expert, and neither do I have much experience in it.
 
@@ -65,6 +71,7 @@ I will admit that I used Claude AI for most of the syntax writing this, because 
 
 However, I don't blindly trust it - no line was left unexplained and no logic was left overlooked.
 
-### License
+
+## License
 
 MIT — see [LICENSE](LICENSE).
