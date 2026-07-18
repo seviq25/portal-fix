@@ -13,6 +13,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 
+import net.minecraft.server.permissions.PermissionLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -38,7 +39,7 @@ public class PortalFix implements ModInitializer {
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
 			dispatcher.register(LiteralArgumentBuilder.<CommandSourceStack>literal("portalfix")
 					.then(LiteralArgumentBuilder.<CommandSourceStack>literal("reload")
-							.requires(source -> Permissions.check(source, "portalfix.reload", 2))
+							.requires(source -> Permissions.check(source, "portalfix.reload", PermissionLevel.GAMEMASTERS))
 							.executes(context -> {
 								boolean success = PortalFixConfigManager.load(true);
 								if (success) {
