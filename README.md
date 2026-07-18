@@ -48,6 +48,7 @@ And an option called `persistenceDurationSeconds` for setting the length of the 
 ### Commands / Permissions
 
 /portalfix reload - reloads the configuration file
+
 *requires the `portalfix.reload` permission or Operator privileges.*
 
 ### License
