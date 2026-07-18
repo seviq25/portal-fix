@@ -52,6 +52,19 @@ And an option called `persistenceDurationSeconds` for setting the length of the 
 
 *requires the `portalfix.reload` permission or Operator privileges.*
 
+### Extra
+
+I am no programming expert, and neither do I have much experience in it.
+
+I'm just a server owner who didn't find any mod to suit my needs, and decided to take matters in my own hands.
+
+This mod was intended to be used only on my server, but I realised that other server owners might be having the same issue, so I publish it both here and on Modrinth.
+
+
+I will admit that I used Claude AI for most of the syntax writing this, because I'm new to Java.
+
+However, I don't blindly trust it - no line was left unexplained and no logic was left overlooked.
+
 ### License
 
 MIT — see [LICENSE](LICENSE).
